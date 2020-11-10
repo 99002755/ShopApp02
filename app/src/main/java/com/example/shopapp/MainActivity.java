@@ -44,14 +44,15 @@ public class MainActivity extends AppCompatActivity {
         Intent hIntent = new Intent(MainActivity.this, HomeActitvity.class);
         switch (view.getId()) {
             case R.id.buttonlogin:
-                startHome();
-                break;
-            case R.id.buttoncancel:
                 Intent dialIntent =  new Intent(Intent.ACTION_DIAL, Uri.parse("tel:1234567"));
-                        //new Intent(Intent.ACTION_VIEW, Uri.parse("tel:12345678"));
+                //new Intent(Intent.ACTION_VIEW, Uri.parse("tel:12345678"));
                 //"//http://www.google.com"));
 
                 startActivity(dialIntent);
+
+                break;
+            case R.id.buttoncancel:
+                startHome();
                 break;
         }
 
