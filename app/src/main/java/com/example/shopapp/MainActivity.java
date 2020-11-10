@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public void clickHandler(View view) {
         Log.e(TAG,"clickHandler");
         Intent hIntent = new Intent(MainActivity.this,HomeActitvity.class);
-        hIntent.putExtra("mykey","vihitha");
+        hIntent.putExtra("mykey","vihi");
         startActivity(hIntent);
     }
 }
